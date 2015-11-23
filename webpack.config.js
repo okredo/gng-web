@@ -54,7 +54,7 @@ module.exports = {
                         { test: /jquery\.js$/, loader: 'expose?jQuery' },
 
                         // learned this from http://bline.github.io/bootstrap-webpack-example/
-                        { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' }
+                        //{ test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' }
                 ]
         }
 };
