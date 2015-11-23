@@ -6,3 +6,7 @@ h1{
     height: auto;
     padding: inherit;
 }
+.navbar .label {
+    position: relative;
+    top: 11px;
+}
