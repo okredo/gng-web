@@ -45,16 +45,20 @@ module.exports = {
                                         mimetype: 'image/jpeg'
                                 }
                         },
+                        // bootstrap needed this
                         {
                                 test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
                                 loader: 'url-loader?limit=100000'
                         },
-                        // jquery support snippet #1
-                        { test: /jquery\.js$/, loader: 'expose?$' },
-                        { test: /jquery\.js$/, loader: 'expose?jQuery' },
-
-                        // learned this from http://bline.github.io/bootstrap-webpack-example/
-                        //{ test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' }
+                        // jquery support also for bootstrap
+                        {
+                                test: /jquery\.js$/,
+                                loader: 'expose?$'
+                        },
+                        {
+                                test: /jquery\.js$/,
+                                loader: 'expose?jQuery'
+                        },
                 ]
         }
 };
