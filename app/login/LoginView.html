@@ -1,0 +1,18 @@
+<div ng-if="!vm.loggingIn">
+		<p>
+			User: <input ng-model="vm.user" />
+		</p>
+
+		<p>
+			Password: <input ng-model="vm.password" type="password" />
+		</p>
+
+		<button class="btn btn-success" ng-click="vm.login();">Login !</button>
+</div>
+
+</div>
+
+<div ng-if="vm.loggingIn">
+	Logging-in...
+</div>
+
